@@ -1,4 +1,4 @@
-create schema carebr;
+create schema upload_xml;
 
 CREATE TABLE `xml` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

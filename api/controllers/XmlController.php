@@ -18,7 +18,8 @@ class XmlController {
             $data['vNF'] = utf8_decode($xml->NFe->infNFe->total->ICMSTot->vNF);
 
             //dados destinatario
-            $data['CPF'] = utf8_decode($xml->NFe->infNFe->dest->CPF);
+            $data['destCPF'] = utf8_decode($xml->NFe->infNFe->dest->CPF);
+            $data['destCNPJ'] = utf8_decode($xml->NFe->infNFe->dest->CNPJ);
             $data['xNome'] = utf8_decode($xml->NFe->infNFe->dest->xNome);
             $data['xLgr'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->xLgr);
             $data['nro'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->nro);
@@ -29,6 +30,10 @@ class XmlController {
             $data['UF'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->UF);
             $data['CEP'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->CEP);
             $data['cPais'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->cPais);
+            $data['IE'] = utf8_decode($xml->NFe->infNFe->dest->IE);
+            $data['indIEDest'] = utf8_decode($xml->NFe->infNFe->dest->indIEDest);
+            $data['email'] = utf8_decode($xml->NFe->infNFe->dest->email);
+            $data['fone'] = utf8_decode($xml->NFe->infNFe->dest->fone);
             $data['nomeXml'] = $nome_arquivo;
 
             if($data['CNPJ'] != "09066241000884")

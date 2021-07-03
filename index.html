@@ -68,7 +68,8 @@
                             text += ("<strong>dhEmi: </strong>" + response.data.dhEmi + "<br>");
                             text += ("<strong>vNF: </strong>" + response.data.vNF + "<br>");
                             text += ("<br><strong>Destinatario: </strong><br>");
-                            text += ("<strong>CPF: </strong>" + response.data.CPF + "<br>");
+                            text += ("<strong>CPF: </strong>" + response.data.destCPF + "<br>");
+                            text += ("<strong>CNPJ: </strong>" + response.data.destCNPJ + "<br>");
                             text += ("<strong>xNome: </strong>" + response.data.xNome + "<br>");
                             text += ("<strong>xLgr: </strong>" + response.data.xLgr + "<br>");
                             text += ("<strong>nro: </strong>" + response.data.nro + "<br>");
@@ -79,6 +80,10 @@
                             text += ("<strong>UF: </strong>" + response.data.UF + "<br>");
                             text += ("<strong>CEP: </strong>" + response.data.CEP + "<br>");
                             text += ("<strong>cPais: </strong>" + response.data.cPais + "<br>");
+                            text += ("<strong>IE: </strong>" + response.data.IE + "<br>");
+                            text += ("<strong>indIEDest: </strong>" + response.data.indIEDest + "<br>");
+                            text += ("<strong>email: </strong>" + response.data.email + "<br>");
+                            text += ("<strong>fone: </strong>" + response.data.fone + "<br>");
                             $("#dados").html(text);
                         } else {
                             alert(response.message);

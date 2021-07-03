@@ -29,6 +29,7 @@ class XmlController {
             $data['UF'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->UF);
             $data['CEP'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->CEP);
             $data['cPais'] = utf8_decode($xml->NFe->infNFe->dest->enderDest->cPais);
+            $data['nomeXml'] = $nome_arquivo;
 
             if($data['CNPJ'] != "09066241000884")
                 die(json_encode(array("status"=> 3, 
